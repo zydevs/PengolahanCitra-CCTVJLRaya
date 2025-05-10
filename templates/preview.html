@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview - Pengolahan Citra CCTV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/preview.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="Logo">
+            </div>
+            <a href="{{ url_for('home') }}">
+                <div class="nav-item nav-home">Home</div>
+            </a>
+            <a href="{{ url_for('about') }}">
+                <div class="nav-item nav-about">About</div>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="box">
+            <h2 class="title-preview">Preview Gambar Asli</h2>
+            <div class="image">
+                <img src="{{ file_url }}" alt="Gambar Asli" width="400">
+            </div>
+            <br>
+            <a href="{{ url_for('process') }}" class="btn">Process</a>
+        </div>
+    </div>
+</body>
+</html>

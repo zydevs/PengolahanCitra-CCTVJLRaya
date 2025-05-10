@@ -1,0 +1,113 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Navbar container */
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #CDDFE9;
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Logo */
+.logo img {
+    height: 70px;
+}
+
+/* Tombol Get Started */
+.navbar .get-started-btn {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    width: 159px;
+    height: 40px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #4BB7B7;
+    font-weight: 500;
+}
+
+/* Menu navigasi */
+.navbar .nav-item {
+    position: absolute;
+    font-size: 20px;
+    color: #4BB7B7;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navbar .nav-home {
+    left: 895px;
+    top: 28px;
+    width: 90px;
+    height: 24px;
+}
+
+.navbar .nav-about {
+    left: 1005px;
+    top: 28px;
+    width: 114px;
+    height: 23px;
+}
+
+/* content */
+/* Konten utama dengan background gambar */
+.content {
+    width: 100%;
+    height: 88vh;
+    background-image: url('/static/img/background-1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Judul besar */
+.content-title {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 592px;
+    height: auto;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+/* Tombol Upload */
+.upload-button {
+    position: absolute;
+    top: 300px;
+    left: 5%;
+    width: 200px;
+    height: 55px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

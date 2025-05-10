@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Pengolahan Citra CCTV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/preview.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../static/img/logo.svg" alt="">
+            </div>
+            <a href="{{ url_for('home') }}">
+                <div class="nav-item nav-home">Home</div>
+            </a>
+            <a href="{{ url_for('about') }}">
+                <div class="nav-item nav-about">About</div>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="box">
+            <div class="image-output">
+                <div class="image-item">
+                    <img src="{{ gray_img }}" alt="Grayscale">
+                    <h1 class="feature">Grayscale</h1>
+                </div>
+                <div class="image-item">
+                    <img src="{{ median_img }}" alt="Filter Median">
+                    <h1 class="feature">Filter Median</h1>
+                </div>
+                <div class="image-item">
+                    <img src="{{ edge_img }}" alt="Deteksi Tepi">
+                    <h1 class="feature">Deteksi Tepi</h1>
+                </div>
+            </div>
+
+            <a href="{{ url_for('upload_page') }}" class="btn">Re-Upload</a>
+        </div>
+    </div>
+
+</body>
+</html>

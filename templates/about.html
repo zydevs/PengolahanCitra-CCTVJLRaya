@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Pengolahan Citra CCTV</title>
+    <link rel="stylesheet" href="./static/css/about.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./static/img/logo.svg" alt="">
+            </div>
+            <a href="{{ url_for('upload_page') }}">
+                <div class="get-started-btn">Get Started</div>
+            </a>
+            <a href="{{ url_for('home') }}">
+                <div class="nav-item nav-home">Home</div>
+            </a>
+            <a href="{{ url_for('about') }}">
+                <div class="nav-item nav-about">About</div>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="picture">
+            <img src="./static/img/profile.png" alt="">
+        </div>
+        <div class="name">
+            <h1>Muhamad Hafizi</h1>
+            <h1>065122214</h1>
+            <h1>Developer</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
