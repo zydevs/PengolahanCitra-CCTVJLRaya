@@ -124,7 +124,7 @@
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    margin: -40px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
     box-sizing: border-box; 
 }
 
@@ -177,16 +177,10 @@
 }
 
 .title-preview{
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
     font-size: 24px;
     color: #4BB7B7;
     text-align: center;
     font-family: Montserrat;
-}
-
-.btn.loading {
-    opacity: 0.6;
-    pointer-events: none;
-    transition: opacity 0.3s;
 }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result - Pengolahan Citra CCTV</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/preview.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+    <link rel="shortcut icon" href="../static/img/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <nav>
@@ -23,19 +24,30 @@
     
     <div class="content">
         <div class="box">
+             <h2 class="title-preview">Image Processing Results</h2>
             <div class="image-output">
                 <div class="image-item">
-                    <img src="{{ gray_img }}" alt="Grayscale">
+                    <a href="{{ gray_img }}" download>
+                        <img src="{{ gray_img }}" alt="Grayscale">
+                    </a>
                     <h1 class="feature">Grayscale</h1>
+                    <a href="{{ gray_img }}" download class="btn-d">Download</a>
                 </div>
                 <div class="image-item">
-                    <img src="{{ median_img }}" alt="Filter Median">
+                    <a href="{{ median_img }}" download>
+                        <img src="{{ median_img }}" alt="Filter Median">
+                    </a>
                     <h1 class="feature">Filter Median</h1>
+                    <a href="{{ median_img }}" download class="btn-d">Download</a>
                 </div>
                 <div class="image-item">
-                    <img src="{{ edge_img }}" alt="Deteksi Tepi">
+                    <a href="{{ edge_img }}" download>
+                        <img src="{{ edge_img }}" alt="Deteksi Tepi">
+                    </a>
                     <h1 class="feature">Deteksi Tepi</h1>
+                    <a href="{{ edge_img }}" download class="btn-d">Download</a>
                 </div>
+
             </div>
 
             <a href="{{ url_for('upload_page') }}" class="btn">Re-Upload</a>

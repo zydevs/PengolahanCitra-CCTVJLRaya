@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Pengolahan Citra CCTV</title>
     <link rel="stylesheet" href="./static/css/home.css">
+    <link rel="shortcut icon" href="../static/img/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <nav>
@@ -24,7 +25,7 @@
         </div>
     </nav>
     
-    <div class="content">
+    <div class="content slide-up">
         <div class="content-title">
             Pengolahan Citra<br/>CCTV Jalan Raya
         </div>
@@ -33,5 +34,13 @@
         </a>
     </div>
     
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.slide-up').forEach(el => {
+                el.style.animationDelay = '0.2s'; // tambahkan delay jika mau
+            });
+        });
+    </script>
+
 </body>
 </html>

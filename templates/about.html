@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Pengolahan Citra CCTV</title>
     <link rel="stylesheet" href="./static/css/about.css">
+    <link rel="shortcut icon" href="../static/img/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <nav>
@@ -25,15 +26,27 @@
     </nav>
     
     <div class="content">
-        <div class="picture">
-            <img src="./static/img/profile.png" alt="">
-        </div>
-        <div class="name">
-            <h1>Muhamad Hafizi</h1>
-            <h1>065122214</h1>
-            <h1>Developer</h1>
+        <div class="scale-in">
+            <div class="picture">
+                <img src="./static/img/profile.png" alt="">
+            </div>
+            <div class="name">
+                <h1>Muhamad Hafizi</h1>
+                <h1>065122214</h1>
+                <h1>Developer</h1>
+            </div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.scale-in');
+            elements.forEach((el, i) => {
+                el.style.animationDelay = `${i * 0.3}s`;
+            });
+        });
+    </script>
+
     
 </body>
 </html>

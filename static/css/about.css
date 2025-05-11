@@ -6,6 +6,20 @@
     overflow: hidden;
 }
 
+/* Animasi scale-in */
+.scale-in {
+    transform: scale(0.5);
+    opacity: 0;
+    animation: scaleIn 0.8s ease-out forwards;
+}
+
+@keyframes scaleIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* Navbar container */
 .navbar {
     position: relative;

@@ -6,6 +6,20 @@
     overflow: hidden;
 }
 
+/* Efek slide-up */
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Navbar container */
 .navbar {
     position: relative;
